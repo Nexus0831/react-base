@@ -33,6 +33,10 @@ module.exports = {
   },
   plugins,
   devtool: 'inline-source-map',
+  mode: 'development',
+  performance: {
+    hints: false
+  },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     port: 5555,
